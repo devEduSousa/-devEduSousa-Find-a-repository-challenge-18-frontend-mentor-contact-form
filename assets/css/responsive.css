@@ -1,0 +1,60 @@
+@media(min-width: 375px) {
+    form {
+        width: 335px;
+        margin: 100px 0;
+    }
+
+    #message-container {
+        width: 280px;
+        padding: 20px;
+    }
+}
+
+@media(min-width: 425px) {
+    #message-container {
+        width: 300px;
+    }
+
+    form {
+        width: 385px;
+    }
+}
+
+@media(min-width: 600px) {
+    #message-container {
+        width: 380px;
+        padding: 20px 30px;
+    }
+
+    #message-container p {
+        font-size: 13px;
+    }
+    
+    form {
+        width: 600px;
+    }
+
+    .field:nth-child(2) {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .field:nth-child(2) label p{
+        margin-top: 10px;
+    }
+
+    .field:nth-child(5) div {
+        display: flex;
+        gap: 20px;
+    }
+
+    .field .radio-input-label {
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .field #message {
+        height: 100px;
+    }
+}
+

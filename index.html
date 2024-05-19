@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+        <link rel="stylesheet" href="./assets/css/styles.css">
+        <link rel="stylesheet" href="./assets/css/responsive.css">
+        <script src="./assets/js/script.js" defer></script>
+        <title>Frontend Mentor | Contact form</title>
+    </head>
+    <body>
+        <div id="message-container" class="hidden">
+            <div class="title">
+                <img src="./assets/images/icon-success-check.svg" alt="icon sucesse check">
+                <h6>Message Sent!</h6>
+            </div>
+            <p>Thanks for completing the form. We'll be in touch soon!</p>
+        </div>
+        <form>
+            <h1>Contact Us</h1>
+            <div class="field">
+                <label>
+                    <span class="title">First Name <span class="green">*</span></span>
+                    <input type="text">
+                    <p class="error hidden">This field is required</p>
+                </label>
+                <label>
+                    <span class="title">Last Name <span class="green">*</span></span>
+                    <input type="text">
+                    <p class="error hidden">This field is required</p>
+                </label>
+            </div>
+            <label class="field">
+                <span class="title">Email Address <span class="green">*</span></span>
+                <input type="email">
+            </label>
+            <p class="error hidden">Please enter a valid email address</p>
+            <label class="field">
+                <span class="title">Query Type <span class="green">*</span></span>
+                <div>
+                    <label class="radio-input-label">
+                        <input type="radio" name="type">
+                        <img class="hidden" src="./assets/images/icon-radio-selected.svg" alt="icon radio selected">
+                        <span>General Enquiry</span>
+                    </label>
+                    <label class="radio-input-label">
+                        <input type="radio" name="type">
+                        <img class="hidden" src="./assets/images/icon-radio-selected.svg" alt="icon radio selected">
+                        <span>Support Request</span>
+                    </label>
+                </div>
+            </label>
+            <p class="error hidden">Please select a query type</p>
+            <label class="field">
+                <span class="title">Message <span class="green">*</span></span>
+                <textarea name="Message" id="message"></textarea>
+            </label>
+            <p class="error hidden">This field is required</p>
+            <label class="field last">
+                <input type="checkbox" name="accept" id="accept">
+                <span>I consent to being contacted by the team <span class="green">*</span></span>
+            </label>
+            <p class="error hidden">To submit this form, please consent to being contacted</p>
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
